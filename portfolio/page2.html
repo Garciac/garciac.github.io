@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio Website</title>
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="mymap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark transparent" id="nav1">
+        <a class="navbar-brand">Chris's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="page2.html">App Academy Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page3.html">Favorite Assignment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page4.html">Skill</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>App Academy Project</h1>
+    <!-- 1st container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-10">
+                <h1 id="pr1">Parks and Rec Filming locations</h1>
+
+                <div class="main" id="pr2">
+                    <div id="map"></div>
+                </div>
+                <p id="detail">Information can be found <a href=" http://www.lamag.com/citythinkblog/complete-parks-recreation-guide-los-angeles/">Here! </a></p>
+
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+        </div>
+    </div>
+    <br/>
+    <!-- 2nd container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-8">
+                <p id="detail">
+                    Details about App Academy Project:
+                    <br/>
+                    <br/>The custom map I made was about the filming locations of Parks of Recreation. I made this because "Parks and Recreation" is one of my favorite shows and also it was filmed in my hometown and nearby cities. The projects uses the Google Maps API. The map has a Camera icon for every filming locations.</p>
+            </div>
+            <div class="col-sm-2"> </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="mymap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHwXwrrpQloucblsa_-aNJ4tFC9IjC0Wk&callback=initMap"></script>
+</body>
+
+</html>
